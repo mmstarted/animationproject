@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazan</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo" alt="logo">
+            <h5 class="underlogo-text">KAZAN</h5>
+        </nav>
+        <h1 class="title">Kazan</h1>
+        <h2 id="current-time"></h2>
+    </div>
+    
+    <script>
+        let time = document.getElementById("current-time");
+
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        },1000)
+
+    </script>
+</body>
+</html>
